@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import JestExamples from 'sections/JestExample/JestExamples'
-import HomeTitle from 'sections/HomePage/HomeTitle'
-import { PageContainer } from '../styles/appStyles.css'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import JestExamples from 'src/sections/JestExample/JestExamples';
+import HomeTitle from 'src/sections/HomePage/HomeTitle';
+import { PageContainer } from '../../styles/appStyles.css';
 
 const Home: NextPage = () => {
   return (
@@ -13,10 +13,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       <main>
-      <HomeTitle title='Main Title'/>
-      
+        <HomeTitle title="Main Title" />
+
         <h1>Project Starter</h1>
         <h6>Packages</h6>
         <ul>
@@ -28,7 +27,7 @@ const Home: NextPage = () => {
         <JestExamples />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
