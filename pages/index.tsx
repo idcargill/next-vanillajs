@@ -2,7 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-import JestExamples from '../sections/JestExample/JestExamples'
+import JestExamples from 'sections/JestExample/JestExamples'
+import HomeTitle from 'sections/HomePage/HomeTitle'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <main className={styles.main}>
+      <HomeTitle title='Main Title'/>
+      
         <h1>Project Starter</h1>
         <h6>Packages</h6>
         <ul>
