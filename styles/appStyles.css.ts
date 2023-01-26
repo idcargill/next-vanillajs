@@ -8,9 +8,9 @@ export const Title = style({
 export const PageContainer = style({
   margin: 'auto',
   padding: 10,
-})
+});
 
 export const centerText = style({
   textAlign: 'center',
   margin: 'auto',
-})
+});

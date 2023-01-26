@@ -1,7 +1,33 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "eslint:all"],
+  "extends": ["next/core-web-vitals", "prettier", "eslint:all"],
   "rules": {
-    "comma-dangle": "off",
-    "no-var": "error"
+    "no-var": "error",
+    "no-unused-vars": "error",
+    "object-curly-spacing": "off",
+    "no-unreachable": "error",
+    "sort-imports": "off",
+    "semi-spacing": "warn",
+    "sort-vars": "off",
+    "prefer-const": "warn",
+    "quotes": [
+      "error", "single"
+    ],
+    "array-element-newline": [
+      "error", {
+        "ArrayExpression": "consistent",
+        "ArrayPattern": { "minItems": 3, "multiline": true }
+      }
+    ],
+    "indent": ["error", 2],
+    "implicit-arrow-linebreak": "warn",
+    "no-extra-parens": "warn",
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
+    "sort-keys": "off",
+    "capitalized-comments": "off",
+    "no-duplicate-imports": "error",
+    "one-var": "off",
+    "max-len": "off",
+    "quote-props": ["error", "as-needed"],
+    "comma-dangle": "off"
   }
 }
