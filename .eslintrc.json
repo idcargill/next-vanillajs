@@ -6,9 +6,23 @@
     "no-unused-vars": "error",
     "no-duplicate-imports": "error",
     "prefer-const": "warn",
-    "react/jsx-sort-props": "off",
     "max-len": ["error", 120],
-    "arrow-body-style": ["error", "always"]
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "always",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+    }],
     // "arrow-parens": ["error", "always"]
+    "arrow-body-style": ["error", "as-needed"],
+    "react/jsx-sort-props": "off",
+    "react/function-component-definition": [
+      2, {
+        "namedComponents": "arrow-function",
+        "unnammedComponents": "arrow-function"
+      }
+    ]
   }
 }
