@@ -1,4 +1,4 @@
-.gitignore
-node_modules/
 .*
+.gitignore
 .env.local
+node_modules/

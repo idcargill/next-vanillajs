@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "./node_modules/jest/bin/jest.js",
-    "pretty": "prettier --check --ignore-path .gitignore ."
+    "pretty": "prettier --check --ignore-path .gitignore .",
+    "newProject": "ls ./src/sections/HomePage"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.9.3",
