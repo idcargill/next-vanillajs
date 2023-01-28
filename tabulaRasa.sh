@@ -1,9 +1,8 @@
 #!/bin/bash
 
 echo '*********************************************************'
-touch garbage.txt
-touch src/pages/index2.tsx
-cat src/pages/index.tsx | grep -v -i 'HomePageExamples' >> src/pages/index2.tsx
+# touch src/pages/index2.tsx
+# cat src/pages/index.tsx | grep -v -i 'HomePageExamples' >> src/pages/index2.tsx
 
 echo DELETE WARNING!
 echo Running this file will reset the following exmple files and directories
@@ -19,8 +18,14 @@ read -p '--> ' userInput
 case $userInput in
   y|Y|yes|Yes)
     echo Deleting files
-    rm garbage.txt
-    rm tabulaRasa2
+    cp -r src src2
+    cp -r styles styles2
+    rm -r src2/sections
+    rm -r styles2/StyleSheets/*
+    rm styles2/index.ts
+    touch styles2/index.ts
+    echo "// import { style, keyframes } from '@vanilla-extract/css'" >> styles2/index.ts
+    # mv examples.env.local .env.local
     echo  'Welcome to the world'
     ;;
   n|N|no|NO)
