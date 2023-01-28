@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { PageContainer } from '../../styles/StyleSheets/PageContainer.css';
+import { PageContainer } from '../../styles';
 import HomePageExamples from 'src/sections/HomePage/HomePageExample';
 
 const Home = () => (

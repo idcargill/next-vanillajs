@@ -1,4 +1,5 @@
 import {
+  PageContainer,
   ProjectContainer,
   listStyle,
   listContainer,
@@ -10,6 +11,7 @@ export {
   centerText,
   listContainer,
   listStyle,
+  PageContainer,
   ProjectContainer,
   SpinnerCSS,
   tabulaRasa,

@@ -9,7 +9,8 @@ const Home = () => (
       <link href="/favicon.ico" rel="icon" />
     </Head>
 
-    <main className={PageContainer}></main>
+    <main className={PageContainer}>
+    </main>
   </>
 );
 export default Home;
