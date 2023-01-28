@@ -20,7 +20,7 @@ case $userInput in
   y|Y|yes|Yes)
     echo Deleting files
     rm garbage.txt
-    rm tabulaRasa2
+    rm -- "$0"
     echo  'Welcome to the world'
     ;;
   n|N|no|NO)
