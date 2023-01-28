@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 /*
 LINT TESTING
 Test formatting here for linter settings.
@@ -11,19 +10,36 @@ Test formatting here for linter settings.
 .editorConfig
 */
 
-
-// array
+// short array
 const arr = ['a', 'b', 'c'];
 
-// object
-const obj = {
-  name: 'hi',
-  job: 'pizza guy',
+// long array
+const longArr = [
+  "kitten",
+  "fish",
+  "dragon",
+  "bat",
+  "sharky",
+  "magic", 
+  "lion",
+  "long word and stuff",
+  "lasagna"
+];
+
+// object one line
+const obj = { name: 'hi', job: 'pizza guy'};
+
+// Multi line
+const largObj = {
+  name: 'jo',
+  pet: 'kitten',
+  job: 'big broom pusher',
+  car: 'ugly one',
+  snacks: 'yes have some',
 };
 
-
 // arrow function ()
-export const ComponentExample1 = () => (
+export const ComponentExample1 = () => (  
   <h1>Some Text</h1>
 );
 

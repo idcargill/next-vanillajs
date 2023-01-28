@@ -15,6 +15,13 @@ module.exports = {
       "exports": "always-multiline",
       "functions": "never",
     }],
+    // "array-element-newline": ["error", {
+    //   "ArrayExpression":  "consistent",
+    //   "ArrayPattern": {
+    //     "minItems": 3,
+    //   },
+    // }
+    // ],
     // Functions
     // "max-lines-per-function": ["error", { "max": 30 }],
     // "arrow-parens": ["error", "always"]
