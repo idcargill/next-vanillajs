@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-const RouterExample = () => {
+const RouterExample = ({ className }: any) => {
   const router = useRouter();
-  const [isLoaded, setIsLoded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const routerObjects = Object.keys(router);
   // const { pathname, query, asPath, basePath, locale, defaultLocale, isReady, isPreview } = router;
@@ -11,7 +11,7 @@ const RouterExample = () => {
   // Use effect to delay sending to client. Mismatch ssr/csr
   useEffect(() => {
     if (router.isReady) {
-      setIsLoded(true);
+      setIsLoaded(true);
     }
   }, []);
 
@@ -19,12 +19,14 @@ const RouterExample = () => {
     return null;
   }
   return (
-    <div>
+    <div className={className}>
       <h3>useRouter object</h3>
       <ul>
-        {routerObjects.map((item, idx) => {
-          return <li key={idx}>{item}</li>;
-        })}
+        {routerObjects.map((item, idx) => (
+          <li key={idx} style={{ listStyle: 'none' }}>
+            {item}
+          </li>
+        ))}
       </ul>
     </div>
   );

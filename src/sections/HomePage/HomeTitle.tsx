@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, centerText } from '../../../styles/appStyles.css';
+import { Title, centerText } from '../../../styles/StyleSheets/appStyles.css';
 
 type titleProps = {
   title: string;
@@ -7,9 +7,9 @@ type titleProps = {
 
 const titleClass = `${Title} ${centerText}`;
 
-const HomeTitle = ({ title }: titleProps): JSX.Element => {
-  return <h1 className={titleClass}>{title}</h1>;
-};
+const HomeTitle = ({ title }: titleProps) => (
+  <h1 className={titleClass}>{title}</h1>
+);
 
 
 export default HomeTitle;

@@ -1,5 +1,17 @@
 import React from 'react';
 
+
+/*
+LINT TESTING
+Test formatting here for linter settings.
+
+.eslintrc.js
+.prettierrc.js
+.vscode/settings.json
+.editorConfig
+*/
+
+
 // array
 const arr = ['a', 'b', 'c'];
 

@@ -8,9 +8,10 @@ const obj = {
 const JestExamples = () => (
   <>
     <h2>Jest Examples</h2>
+    <p>run yarn jest</p>
     <p>{getName(obj)}</p>
   </>
-)
+);
 
 
 
