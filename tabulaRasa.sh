@@ -26,7 +26,7 @@ case $userInput in
     rm styles/index.ts
     
     # reset style sheets
-    rm styles/index.ts
+    rm styles/index.css.ts
     mv styles/example.css.ts styles/index.css.ts
     
     # set .env.local
