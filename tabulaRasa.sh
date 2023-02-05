@@ -26,12 +26,8 @@ case $userInput in
     rm styles/index.ts
     
     # reset style sheets
-    touch styles/index.ts
-    touch styles/StyleSheets/PageContainer.css.ts
-    echo "import { style, keyframes } from '@vanilla-extract/css';" >> styles/StyleSheets/PageContainer.css.ts
-    echo "export const PageContainer = style({ border: '5px solid green', height: '300px', width: '300px' });" >> styles/StyleSheets/PageContainer.css.ts
-    echo  "import { PageContainer } from './StyleSheets/PageContainer.css';" >> styles/index.ts
-    echo "export { PageContainer };" >> styles/index.ts 
+    rm styles/index.ts
+    mv styles/example.css.ts styles/index.css.ts
     
     # set .env.local
     mv examples.env.local .env.local
