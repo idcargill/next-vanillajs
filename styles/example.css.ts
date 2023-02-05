@@ -1,4 +1,9 @@
-import { style } from '@vanilla-extract/css';
+import { style, globalStyle } from '@vanilla-extract/css';
+
+globalStyle('html, body', {
+  margin: 0,
+  boxSizing: 'border-box',
+});
 
 export const PageContainer = style({ 
   border: '5px solid green', 
