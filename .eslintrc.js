@@ -15,6 +15,15 @@ module.exports = {
       "exports": "always-multiline",
       "functions": "never",
     }],
+    "no-multiple-empty-lines": ["error", { max: 2}],
+    "arrow-body-style": ["error", "as-needed"],
+    "react/jsx-sort-props": "off",
+    "react/function-component-definition": [
+      2, {
+        "namedComponents": ["arrow-function", "function-declaration"],
+        "unnammedComponents": "arrow-function",
+      }
+    ],
     // "array-element-newline": ["error", {
     //   "ArrayExpression":  "consistent",
     //   "ArrayPattern": {
@@ -27,13 +36,5 @@ module.exports = {
     // "arrow-parens": ["error", "always"]
     // "implicit-arrow-linebreak": ["error", "beside"],
     // "brace-style": ["warn", "1tbs" ] ,
-    "arrow-body-style": ["error", "as-needed"],
-    "react/jsx-sort-props": "off",
-    "react/function-component-definition": [
-      2, {
-        "namedComponents": "arrow-function",
-        "unnammedComponents": "arrow-function",
-      }
-    ],
   },
 };
