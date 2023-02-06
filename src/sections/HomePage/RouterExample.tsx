@@ -13,7 +13,7 @@ const RouterExample = ({ className }: any) => {
     if (router.isReady) {
       setIsLoaded(true);
     }
-  }, []);
+  }, [router.isReady]);
 
   if (!isLoaded) {
     return null;

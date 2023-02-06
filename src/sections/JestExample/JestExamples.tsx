@@ -14,5 +14,4 @@ const JestExamples = () => (
 );
 
 
-
 export default JestExamples;
